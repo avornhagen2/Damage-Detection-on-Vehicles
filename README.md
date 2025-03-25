@@ -44,25 +44,27 @@ Place the dataset in the designated directory (e.g., ./data).
 
 3. Preprocess the Data:
 Run the preprocessing script to prepare the images for training:
-
-```python preprocess.py --data_dir ./data```
+    ```python preprocess.py --data_dir ./data```
 
 ## Model Training
 To train the damage detection model, execute the following command:
 
 ```python train.py --config configs/train_config.yaml```
+
 Adjust hyperparameters and other settings via the configuration file as needed.
 
 ## Evaluation
 After training, evaluate the model's performance on a test set using:
 
 ```python evaluate.py --model_path path/to/model.pth --data_dir ./data/test```
+
 Evaluation metrics and performance logs will be generated and saved in the results/ directory.
 
 ## Usage
 Once trained, you can use the model for inference on new images:
 
 ```python predict.py --image_path path/to/vehicle_image.jpg --model_path path/to/model.pth```
+
 This script will output the predicted damage class along with confidence scores.
 
 ## Results
