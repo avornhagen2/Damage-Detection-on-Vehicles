@@ -29,11 +29,11 @@ The project leverages modern convolutional neural networks (CNNs) to detect vehi
 ## Installation
 Clone the repository and install the necessary dependencies:
 
-bash
-Copy
-`git clone https://github.com/avornhagen2/Damage-Detection-on-Vehicles.git
+```
+git clone https://github.com/avornhagen2/Damage-Detection-on-Vehicles.git
 cd Damage-Detection-on-Vehicles
-pip install -r requirements.txt`
+pip install -r requirements.txt
+```
 
 ## Data Preparation
 1. Download the Dataset:
@@ -45,32 +45,24 @@ Place the dataset in the designated directory (e.g., ./data).
 3. Preprocess the Data:
 Run the preprocessing script to prepare the images for training:
 
-bash
-Copy
-`python preprocess.py --data_dir ./data`
+```python preprocess.py --data_dir ./data```
 
 ## Model Training
 To train the damage detection model, execute the following command:
 
-bash
-Copy
-`python train.py --config configs/train_config.yaml`
+```python train.py --config configs/train_config.yaml```
 Adjust hyperparameters and other settings via the configuration file as needed.
 
 ## Evaluation
 After training, evaluate the model's performance on a test set using:
 
-bash
-Copy
-`python evaluate.py --model_path path/to/model.pth --data_dir ./data/test`
+```python evaluate.py --model_path path/to/model.pth --data_dir ./data/test```
 Evaluation metrics and performance logs will be generated and saved in the results/ directory.
 
 ## Usage
 Once trained, you can use the model for inference on new images:
 
-bash
-Copy
-`python predict.py --image_path path/to/vehicle_image.jpg --model_path path/to/model.pth`
+```python predict.py --image_path path/to/vehicle_image.jpg --model_path path/to/model.pth```
 This script will output the predicted damage class along with confidence scores.
 
 ## Results
