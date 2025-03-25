@@ -70,5 +70,4 @@ This script will output the predicted damage class along with confidence scores.
 ## Results
 During training and evaluation, performance metrics and visualizations (such as confusion matrices) are generated. Check the results/ directory for detailed logs and plots that help assess model accuracy and reliability.
 
-## Acknowledgements
-Special thanks to all contributors and the research community whose insights and tools made this project possible.
+
